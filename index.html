@@ -1,1 +1,25 @@
 Breadwinner Service Agent
+<html>
+  <body>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DRL000008xc9u',
+				'Test',
+				'https://customization-force-902-dev-ed.scratch.my.site.com/ESWTest1738669378627',
+				{
+					scrt2URL: 'https://customization-force-902-dev-ed.scratch.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://customization-force-902-dev-ed.scratch.my.site.com/ESWTest1738669378627/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
